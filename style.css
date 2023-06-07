@@ -95,6 +95,22 @@ input {
     bottom: 88px;
 }
 
+input::-webkit-slider-runnable-track {
+    height: 14px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+  
+input::-webkit-slider-thumb {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: hsl(243, 100%, 93%);
+    border: 2px solid hsl(335, 100%, 65%);
+    -webkit-appearance: none;
+}
+
 input::-moz-range-progress {
     height: 14px;
     background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
@@ -112,6 +128,16 @@ input::-moz-range-thumb {
     z-index: 2;
     -webkit-appearance: none;
 } 
+
+input::-ms-thumb {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: hsl(243, 100%, 93%);
+    border: 2px solid hsl(335, 100%, 65%);
+    -ms-appearance: none;
+}
 
 .fa-solid {
     color: #ffffff; 
